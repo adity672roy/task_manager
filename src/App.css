@@ -4,17 +4,20 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
 }
+
 input,
 button,
 select {
   outline: none;
   border: none;
 }
+
 button {
   cursor: pointer;
 }
@@ -27,27 +30,35 @@ button {
   background-size: cover;
   background-position: center;
 }
+
 .app_content {
   padding: 1vw 5vw;
+  animation: fadeIn 1s ease-in-out;
 }
+
 .heading {
   text-align: center;
   color: #52394f;
   font-weight: 900;
   font-size: 50px;
+  animation: slideDown 1s ease-in-out;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .search_bar {
   position: relative;
 }
+
 .search_bar input {
   padding: 8px 15px;
   background: rgba(255, 255, 255, 0.799);
 }
+
 .search_icon {
   position: absolute;
   top: 7px;
@@ -61,15 +72,18 @@ button {
   align-items: center;
   gap: 10px;
 }
+
 .task_input input,
 .task_input select {
   padding: 8px 15px;
   background: rgba(255, 255, 255, 0.799);
 }
+
 .task_input input {
   font-size: 16px;
   width: 100%;
 }
+
 .add_btn {
   width: 50px;
   height: 40px;
@@ -78,21 +92,26 @@ button {
   justify-content: center;
   border-radius: 50%;
   background-color: black;
+  animation: popIn 0.5s ease-in-out;
 }
+
 .sort_dropdown {
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 10px;
 }
+
 .sort_dropdown p {
   color: black;
   font-weight: bold;
 }
+
 .sort_dropdown select {
   padding: 8px 15px;
   background: rgba(255, 255, 255, 0.799);
 }
+
 .task_columns {
   display: grid;
   align-items: start;
@@ -101,6 +120,7 @@ button {
   margin-top: 20px;
   padding: 10px;
 }
+
 .priority_column {
   padding: 20px;
   display: flex;
@@ -109,32 +129,36 @@ button {
   align-items: center;
   gap: 10px;
   border-radius: 30px 0;
+  animation: fadeIn 0.8s ease-in-out;
 }
+
 .priority_title {
   text-transform: uppercase;
   margin-block: 10px;
   color: #62485f;
 }
-.no_task {
-  font-size: 18px;
-  padding: 10px;
-}
+
 .task {
   background: #ffe9fc;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   padding: 10px;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  animation: slideUp 0.6s ease-in-out;
 }
+
 .task_title {
   font-size: 18px;
 }
+
 .line {
   text-decoration: line-through;
+  color: gray;
 }
+
 .task_btns {
   display: flex;
   align-items: center;
@@ -152,12 +176,15 @@ button {
   border-radius: 50%;
   border: 1px solid black;
   padding: 5px;
+  animation: scaleUp 0.4s ease-in-out;
 }
+
 .task_edit {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  gap: 10px;
 }
 
 .task input,
@@ -169,24 +196,80 @@ button {
   .app_content {
     padding: 1vw 3vw;
   }
+
   .task_columns {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (max-width: 680px) {
   .header {
     flex-direction: column;
     gap: 10px;
   }
+
   .search_bar input {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 620px) {
   .task_columns {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .heading {
     font-size: 36px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
   }
 }
