@@ -1,6 +1,6 @@
 # Task Manager Application
 
----
+
 
 ## 1. Application and Functionality
 
@@ -15,9 +15,9 @@ The **Task Manager Application** is a React-based task management tool designed 
 - **Sort Tasks**: Sort tasks by title, priority, or completion status.
 - **Local Storage**: All tasks are saved in the browser's local storage, ensuring persistence across sessions.
 - **Responsive Design**: Fully responsive layout for desktop and mobile devices.
+- **Enhanced UI**: Includes animations and color-coded task prioritization for better usability.
 
 
----
 
 ## 2. Setup and Launch Process
 
@@ -46,10 +46,11 @@ Ensure you have the following installed:
     npm start
     # or
     yarn start
-    Open your browser and navigate to http://localhost:5173.
+
+Open your browser and navigate to http://localhost:5173.
 
 
----
+
 
 ## 3. Assumptions Made During Development
 
@@ -57,25 +58,25 @@ Ensure you have the following installed:
 - **Unique Task Titles**: It is assumed that task titles are unique for simpler search functionality.
 - **Local Storage**: The application persists tasks in local storage. If local storage is cleared, all tasks will be lost.
 - **Sorting Logic**: Tasks are sorted alphabetically by title, and this behavior may not align with all user preferences.
-- **Responsive Design**: The application layout is designed to be responsive, but fine-tuning for all screen sizes may require additional testing. 
+- **Responsive Design**: The application layout is designed to be responsive, but fine-tuning for all screen sizes may require additional testing.
+- **Animations**: CSS animations are minimal and focus on tasks.
 
 
----
 
 ## 4. Screenshots
 
 ### Main View
-![Task Manager Main View](./assets/Main_view.png)
+![Task Manager Main View](https://github.com/adity672roy/task_manager/blob/master/src/assets/Main_view.png)
 
 ### Adding a Task
-![Adding a Task](./assets/Add_task.png)
+![Adding a Task](https://github.com/adity672roy/task_manager/blob/master/src/assets/Add_task.png)
 
 ### Editing a Task
-![Editing a Task](./assets/Edit_task.png)
+![Editing a Task](https://github.com/adity672roy/task_manager/blob/master/src/assets/Edit_task.png)
 
 ### Sorting Tasks
-![Sorting Tasks](./assets/Sort_tasks.png)
+![Sorting Tasks](https://github.com/adity672roy/task_manager/blob/master/src/assets/Sort_tasks.png)
 
 ### Responsive Design (Mobile)
-![Responsive Design](./assets/View.png)
-![Responsive Design](./assets/View2.png)
+![Responsive Design](https://github.com/adity672roy/task_manager/blob/master/src/assets/View.png)
+![Responsive Design](https://github.com/adity672roy/task_manager/blob/master/src/assets/View2.png)
