@@ -75,7 +75,7 @@ Open your browser and navigate to http://localhost:5173.
 ![Editing a Task](https://github.com/adity672roy/task_manager/blob/master/src/assets/Edit_task.png)
 
 ### Sorting Tasks
-![Sorting Tasks](https://github.com/adity672roy/task_manager/blob/master/src/assets/Sort_tasks.png)
+![Sorting Tasks](https://github.com/adity672roy/task_manager/blob/master/src/assets/Sort_task.png)
 
 ### Responsive Design (Mobile)
 ![Responsive Design](https://github.com/adity672roy/task_manager/blob/master/src/assets/View.png)
