@@ -11,8 +11,8 @@ The **Task Manager Application** is a React-based task management tool designed 
 - **Delete Tasks**: Remove tasks from the list.
 - **Search Tasks**: Search for tasks by title using a search bar.
 - **Mark as Completed**: Mark tasks as completed, striking them through and fading them.
-- **Priority-Based Columns**: Tasks are automatically sorted into High, Medium, and Low priority columns.
-- **Sort Tasks**: Sort tasks by title, priority, or completion status.
+- **Priority-Based Columns**: Tasks are sorted into High, Medium, and Low priority columns.
+- **Sort Tasks**: Sort tasks by title, date (oldest, newest), or completion status.
 - **Local Storage**: All tasks are saved in the browser's local storage, ensuring persistence across sessions.
 - **Responsive Design**: Fully responsive layout for desktop and mobile devices.
 - **Enhanced UI**: Includes animations and color-coded task prioritization for better usability.
@@ -43,9 +43,9 @@ Ensure you have the following installed:
 3. Start the development server:
 
     ```bash 
-    npm start
+    npm run dev
     # or
-    yarn start
+    yarn run dev
 
 Open your browser and navigate to http://localhost:5173.
 
@@ -55,7 +55,6 @@ Open your browser and navigate to http://localhost:5173.
 ## 3. Assumptions Made During Development
 
 - **Priority Levels**: Tasks have three predefined priority levels: High, Medium, and Low.
-- **Unique Task Titles**: It is assumed that task titles are unique for simpler search functionality.
 - **Local Storage**: The application persists tasks in local storage. If local storage is cleared, all tasks will be lost.
 - **Sorting Logic**: Tasks are sorted alphabetically by title, and this behavior may not align with all user preferences.
 - **Responsive Design**: The application layout is designed to be responsive, but fine-tuning for all screen sizes may require additional testing.
